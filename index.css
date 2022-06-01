@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root
+{
+     --col1:rgba(229, 14, 168, 0.959);
+     --col2:rgb(5, 5, 114);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(assets/web1.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  height:100vh;
+  width:100%;
+  overflow-wrap: hidden;
+  overflow-x: hidden;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav {
+  z-index:1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--col2);
+width: 100% ;
+
+    box-shadow:var(--col1) 2px 2px 2px 2px ;
+}
+
+nav  ul
+
+{  
+   float: right;
+   margin-right:50px;
+
+}
+nav  ul li 
+
+{  
+    display: inline-block;
+    line-height:50px;
+    margin-right:30px;
+    font-size:20px;
+    color:white;
+
+
+}
+nav  ul li  a 
+{
+    color: white;
+    font-weight: bold;
+    font-family:Poppins;
+    padding:5px;
+    border-radius:5px;
+    text-decoration: none;
+}
+.screen{
+    justify-items: center;
+    margin:50px  auto ;
+    margin-top:12rem;
+    text-align: center;
+   
+  }
+.services{
+ margin-top:3rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ 
+}
+.service{
+    
+    height:auto;
+    width:350px;
+    margin: 1rem;
+    padding:1rem;
+    background-color: white;
+    border-radius: 10px;
+    color:var(--col1);
+    display: grid;
+    justify-content: center;
+    box-shadow: var(--col1) 4px 5px 4px;
+}
+.service:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+    
+}
+.service ion-icon{
+    
+     font-size:100px;
+     margin:  45px auto;
+     font-weight: bolder;
+     color: var(--col1);
+   
+}
+.service h4{
+    margin-top: 0;
+    font-size:30px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--col1);
+  
+}
+.service a{
+    margin-top:20px;
+    font-size:20px;
+    text-align: center;
+    font-weight: bolder;
+    color:white;
+    text-decoration: none;
+    background: var(--col2);
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-left:2rem;
+    margin-right:2rem;
+
+  
+}
+.service-more{
+    height:auto;
+    width:90%;
+    margin:10px  auto;
+    margin-top:10rem;
+    padding:1rem;
+    background-color:var(--col2);
+    border-radius: 10px;
+    color:var(--col1);
+    display: grid;
+    justify-content: center;
+    box-shadow: var(--col1) 4px 5px 4px;
+}
+label.logo
+{
+  font-size:25px;
+  margin-left: 50px;
+  line-height:50px;
+  color: #fff;
+  font-family:Poppins;
+  font-weight:bold;
+
+}
+.logo ion-icon
+{
+ 
+  font-size:40px;
+  margin-top:15px;
+  margin-right:20px;
+
+}
+#pay-btn{
+    width:auto;
+    background-color: var(--col1);
+    height:2rem;
+    border: white solid 2px;
+    border-radius: 8px;
+    margin:20px 100px ;
+
+}
+#pay-btn a{
+    text-decoration: none;
+    color:white;
+}
+
+ nav ul li a:hover
+{   color:var(--col1);
+    background-color:white;
+    
+}
+
+#logs{
+  display: grid;
+ 
+}
+
+
+.checkbtn
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right:30px;
+    cursor: pointer;
+    display: none;
+}
+#reseau{
+    
+    cursor: pointer;
+    list-style:none;
+}
+
+#check
+{
+    display: none;
+}
+.card{
+    
+    margin:10px ;
+    padding: 45px;
+    background-color:var(--col2);
+    border-radius: 10px;
+}
+.linked{
+
+    background-color:var(--col1);
+    height:2rem;
+    width:auto;
+    justify-self:center;
+    border-radius:5px;
+    text-align: center;
+    color: white;
+    padding:1rem;
+    cursor: pointer    ;
+}
+.gridcontact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#footer 
+{
+    height:auto;
+    background-color: var(--col2);
+    display:flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin-top: 4px;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    list-style: none;
+
+      
+}
+#footer li a
+{
+    color: white;
+   
+    text-decoration: none;
+   
+}
+/*********************Responsive ********************/
+@media (max-width:902px) 
+
+{   label.logo
+    {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    #pay-btn a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+}
+    nav 
+     {
+        font-size: 15px;
+        
+     }
+    #rt 
+    {
+        margin-left: 15px;
+    }
+    html{
+        font-size: 50%;
+    }
+    .gridcontact{
+        grid-template-columns:1fr;
+        justify-content: center;
+    }
+    #footer
+{
+    display: grid;
+}
+.screen{
+    font-size:17px;
+}
+   
+
+        
+}
+@media (max-width:800px) 
+{
+
+     #logs img{
+       height:55px;
+     }
+    .checkbtn
+    {   
+        display: block;
+    }  
+    ul
+    {
+        position: fixed;
+        width:80%;
+        background-color:var(--col2);
+        height:auto; 
+        top:2rem;
+        left:-100%;
+        text-align:left;
+        transition: all .5s;
+        box-shadow:var(--col1) 2px 2px 2px 2px ;
+    }
+    
+    nav ul li 
+    {
+        display: block;
+    }
+    #check:checked ~ ul 
+    {
+        left:0;
+    }
+.service h4{
+    font-size: 20px;
+    
+  
+}
+.service a{
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 0.5rem;
+  
+}
+html{
+    font-size: 70%;
+}
+}
+
