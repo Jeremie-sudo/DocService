@@ -64,7 +64,7 @@ const changePage=(title,desc)=>{
                     <h2>Comment se passe la commande ?</h2>
                   <p>
                     Nous travailllons principalement avec l'application Whatsapp.
-                    Une fois vous cliquez sur le boutton 'Acheter', vous allez vous 
+                    Une fois vous cliquez sur le boutton 'Acheter ce service', vous allez vous 
                     rétrouvez sur notre compte Whatsapp. Vous allez parcourir
                     maintenant notre cathalogue et nous éccris si vous vous intéressé à
                     l'un de nos services.
@@ -89,13 +89,13 @@ linkeds.forEach((linked)=>{
        linked.addEventListener('click',(e)=>{
             id =e.target.id
           
-           if (id=='1') {
+           if (id=='0') {
             changePage("Convertissez PDF en Word",arrayDesc[0])
            }
-           else if (id=='2') {
+           else if (id=='1') {
              changePage("Concevez vos supports et fiches de cours",arrayDesc[1])
            }
-            else if (id=='3') {
+            else if (id=='2') {
              changePage("Rédigez la clé et grille de correction d'une épreuve de Maths",arrayDesc[2])
            }
            
